@@ -4,7 +4,7 @@
 
 {% block content %}
     <div class="content">
-        <div class="counter" id="counter">{{ counter }}</div>
+        <div class="counter" id="counter">This fortune cookie has been clicked {{ counter }} times.</div>
         <div class="cookie-container">
             <img src="{{ url_for('static', filename='images/cookie.png') }}" alt="Fortune Cookie" id="cookie" />
         </div>
