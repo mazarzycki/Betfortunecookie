@@ -1,0 +1,68 @@
+/* Ensure the body takes the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Set up a flex container for the entire body */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Content container to center elements */
+.content {
+    flex: 1; /* Allow this div to grow and fill the space */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #f1f1f1; /* Optional background color for the footer */
+    padding: 10px; /* Some padding for spacing */
+    width: 100%; /* Full width */
+}
+
+/* Styles for the cookie container */
+#cookie-container {
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    cursor: pointer;
+}
+
+/* Styles for the tip container */
+#tip-container {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Counter styles */
+#counter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #000;
+}
+
+/* Accept container styles */
+#accept-container {
+    text-align: center;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}

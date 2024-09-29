@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Fortune Cookie{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <div class="counter" id="counter">{{ counter }}</div>
+        <div class="cookie-container">
+            <img src="{{ url_for('static', filename='images/cookie.png') }}" alt="Fortune Cookie" id="cookie" />
+        </div>
+
+        <!-- Audio element -->
+        <audio id="crackSound" src="{{ url_for('static', filename='sounds/crack.mp3') }}" preload="auto"></audio>
+    </div>
+{% endblock %}
